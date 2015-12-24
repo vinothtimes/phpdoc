@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get -y install php-pear php5-dev libmysqlclient15-dev libpq-dev
 RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql
 
-COPY ./jamit /var/www/html/
+COPY ./jamit/var/www/html/
 
 # Oracle instantclient
 COPY ./software/oracle/instantclient-basic-linux.x64-11.2.0.4.0.zip /tmp/instantclient-basic-linux.x64-11.2.0.4.0.zip
